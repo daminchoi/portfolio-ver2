@@ -1,0 +1,18 @@
+@media only screen and (max-width: 300px) {
+  .first-ment {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .first-ment {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .first-ment {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=mixin.css.map */

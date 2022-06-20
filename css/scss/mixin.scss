@@ -1,0 +1,22 @@
+$decisionpoint-mobile: 300px;
+$decisionpoint-tablet: 700px;
+$decisionpoint-desktop: 1000px;
+
+@mixin size($media) {
+    @if $media == mobile{
+        @media only screen and (max-width : $decisionpoint-mobile) {@content;}}
+    
+    @else if $media == tablet{
+        @media only screen and (min-width : $decisionpoint-tablet) and (max-width : $decisionpoint-desktop) {@content;}}
+    
+    @else if $media == desktop{
+        @media only screen and (min-width : $decisionpoint-desktop) {@content;}}
+}
+
+.first-ment{
+    @include size(mobile) {font-size: 14px;}
+    
+    @include size(tablet) {font-size: 16px;}
+    
+    @include size(desktop) {font-size: 20px;}
+}
