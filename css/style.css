@@ -15,8 +15,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 50px;
-    height: 26px;
+    width: 35px;
+    height: 20px;
     background-color: #111;
     border-radius: 50px;
     transform: scale(1.5);
@@ -27,10 +27,10 @@ body{
     position: absolute;
     background-color: #fff;
     border-radius: 50%;
-    width: 22px;
-    height: 22px;
+    width: 1rem;
+    height: 1rem;
     top: 2px;
-    left: 2px;
+    left: 1.5px;
     transition: transform 0.2s ease-out;
 }
 
@@ -46,7 +46,7 @@ body.dark div{
 }
 
 .checkbox:checked + .label .ball {
-    transform: translateX(24px);
+    transform: translateX(17px);
 }
 
 .checkbox {
@@ -85,6 +85,7 @@ body.dark div{
     max-width: 20%;
     padding: 0.2vw;
 }
+
 #border-box {
     justify-content: center;
     font-size: 1.5rem;
